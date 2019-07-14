@@ -19,3 +19,18 @@ palindrome = string => {
 reverseInteger = integer => {
     return parseInt(integer.toString().split("").reverse().join(""))
 }
+
+//Fizz Buzz
+fizzbuzz = number => {
+    for(let x=1; x <= number; x++){
+        if(x%2 == 0 && x%3 == 0) { //x%6 == 0 would also work as it's the lowest common multiple
+            console.log("Fizz Buzz")
+        } else if (x%2 == 0) {
+            console.log("Fizz")
+        } else if (x%3 == 0) {
+            console.log("Buzz")
+        } else {
+            console.log(x)
+        }
+    }
+}
