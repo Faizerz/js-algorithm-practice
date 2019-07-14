@@ -34,3 +34,27 @@ fizzbuzz = number => {
         }
     }
 }
+
+
+maxCharacter = sentence => {
+    let counter = {}
+    sentence.split("").forEach(letter => {
+        if(counter[letter]){
+            counter[letter] += 1
+        } else {
+            counter[letter] = 1
+        }
+    })
+    
+    let maxCount = 0
+    let maxChar = ""
+
+    for(let character in counter) {
+        if(counter[character] > maxCount){
+            maxCount = counter[character]
+            maxChar = character
+        } 
+    }
+
+    return maxChar
+}
