@@ -14,3 +14,8 @@ palindrome = string => {
     }
 	return true
 }
+
+//Intger Reversal
+reverseInteger = integer => {
+    return parseInt(integer.toString().split("").reverse().join(""))
+}
